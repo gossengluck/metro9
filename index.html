@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tower Defense - 2 Spieler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =================== LOBBY SCREEN =================== -->
+<div id="lobbyScreen">
+  <div class="lobby-container">
+    <h1 class="lobby-title">Tower Defense</h1>
+    <h2 class="lobby-subtitle">2 Spieler Modus</h2>
+
+    <div class="lobby-form">
+      <div class="input-group">
+        <label for="playerNameInput">Dein Name</label>
+        <input type="text" id="playerNameInput" placeholder="Name eingeben..." maxlength="15" autofocus>
+      </div>
+
+      <div class="input-group">
+        <label for="lobbyNameInput">Lobby Name</label>
+        <input type="text" id="lobbyNameInput" placeholder="Lobby Name..." maxlength="20">
+      </div>
+
+      <div class="lobby-buttons">
+        <button class="lobby-btn create" id="createLobbyBtn">
+          <span class="lobby-btn-icon">+</span>
+          Lobby erstellen
+        </button>
+        <button class="lobby-btn join" id="joinLobbyBtn">
+          <span class="lobby-btn-icon">→</span>
+          Lobby beitreten
+        </button>
+      </div>
+
+      <div id="lobbyStatus" class="lobby-status"></div>
+
+    </div>
+  </div>
+</div>
+
+<!-- =================== GAME SCREEN =================== -->
+<div id="gameContainer" style="display:none;">
+  <div id="canvasWrapper">
+    <canvas id="gameCanvas"></canvas>
+    <div id="pauseOverlay">PAUSIERT</div>
+
+    <!-- Player info overlay -->
+    <div id="playerInfoOverlay">
+      <div class="player-tag left" id="leftPlayerTag">Spieler 1</div>
+      <div class="player-tag right" id="rightPlayerTag">Spieler 2</div>
+    </div>
+
+    <!-- Map divider line -->
+    <div id="mapDivider"></div>
+
+    <!-- Camera Controls Info -->
+    <div id="cameraInfo">
+      <div class="info-line">🖱️ <strong>Rechtsklick + Ziehen</strong>: Karte bewegen</div>
+      <div class="info-line">🔍 <strong>Mausrad</strong>: Zoom</div>
+      <div class="info-line">⌨️ <strong>WASD</strong>: Kamera bewegen</div>
+      <div class="info-line">⌨️ <strong>Leertaste</strong>: Zoom zurücksetzen</div>
+    </div>
+  </div>
+
+  <div id="sidebar">
+    <div class="sidebar-header">
+      <span id="roundDisplay" class="round-badge">Runde 0</span>
+      <button class="text-link-btn" id="newGameBtn" title="Zurück zur Lobby">↻ Lobby</button>
+    </div>
+
+    <!-- Opponent Info -->
+    <div class="opponent-info" id="opponentInfo">
+      <div class="opponent-header">
+        <span class="opponent-icon">⚔️</span>
+        <span class="opponent-name" id="opponentNameDisplay">Gegner</span>
+      </div>
+      <div class="opponent-stats">
+        <div class="opponent-stat">
+          <span>❤️</span>
+          <span id="opponentLives">20</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-stat">
+        <div class="top-stat-icon">❤️</div>
+        <div class="top-stat-value" id="lives">20</div>
+      </div>
+      <div class="top-stat gold">
+        <div class="top-stat-icon">💰</div>
+        <div class="top-stat-value" id="gold">500</div>
+      </div>
+      <div class="top-stat">
+        <div class="top-stat-icon">🌊</div>
+        <div class="top-stat-value" id="wave">0</div>
+      </div>
+    </div>
+
+    <!-- Score -->
+    <div class="score-display">
+      <div class="score-label">Punkte</div>
+      <div class="score-value" id="score">0</div>
+    </div>
+
+    <!-- Controls -->
+    <div class="control-grid">
+      <button class="control-btn speed" id="rewindBtn">
+        <span class="btn-icon">⏪</span>
+        <span class="btn-text speed-text">1×</span>
+      </button>
+      <button class="control-btn speed" id="ffBtn">
+        <span class="btn-icon">⏩</span>
+        <span class="btn-text speed-text">1×</span>
+      </button>
+      <button class="control-btn pause" id="pauseBtn">
+        <span class="btn-icon">⏸</span>
+        <span class="btn-text">Pause</span>
+      </button>
+    </div>
+
+    <!-- ========= EINHEITEN SHOP (NEU) ========= -->
+    <div class="unit-shop" id="unitShop">
+      <div class="shop-header">
+        <span class="shop-icon">⚔️</span>
+        <span class="shop-title">Einheiten senden</span>
+      </div>
+      <div class="shop-queue" id="attackQueue">
+        <div class="queue-empty">Keine Einheiten gewählt</div>
+      </div>
+      <div class="shop-grid" id="unitGrid">
+        <!-- Wird dynamisch gefüllt -->
+      </div>
+      <div class="shop-total">
+        <span>Kosten: </span>
+        <span id="attackCost" class="attack-cost-value">0 💰</span>
+      </div>
+      <button class="send-attack-btn" id="sendAttackBtn" disabled>
+        <span>🚀 Angriff senden</span>
+      </button>
+    </div>
+
+    <!-- Nächste Runde Button (ersetzt Welle starten) -->
+    <button class="wave-start-btn" id="startWaveBtn" aria-label="Nächste Runde">
+      <div class="wave-btn-content">
+        <span class="wave-btn-icon">▶</span>
+        <span class="wave-btn-text">Nächste Runde</span>
+        <span class="wave-hotkey">R</span>
+      </div>
+    </button>
+
+    <div id="readyStatus" class="ready-status">
+      <span id="myReadyStatus" class="ready-dot">●</span> Du
+      <span id="opponentReadyStatus" class="ready-dot">●</span> Gegner
+    </div>
+
+    <!-- Vorschau nächste Welle -->
+    <div class="wave-preview" id="waveInfo">Bereit zum Spielen</div>
+
+    <!-- Tower Info -->
+    <div id="towerInfoPanel">
+      <div class="info-header">
+        <canvas class="info-icon" id="infoIcon" width="60" height="60"></canvas>
+        <div class="info-title">
+          <div class="info-name" id="infoName">Turm</div>
+          <div class="info-level" id="infoLevel">Level 1</div>
+        </div>
+        <button class="close-info" id="closeInfo">×</button>
+      </div>
+      <div class="info-stats" id="infoStats"></div>
+      <div class="info-buttons">
+        <button class="upgrade-btn" id="upgradeBtn">⬆ Upgrade</button>
+        <button class="sell-btn" id="sellBtn">💰 Verkaufen</button>
+      </div>
+    </div>
+
+    <!-- Build -->
+    <div class="build-section">
+      <div class="build-header">
+        <span class="build-icon">🔨</span>
+        <span class="build-title">Türme bauen</span>
+      </div>
+      <div class="tower-grid" id="towerGrid"></div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="game.js"></script>
+
+<script>
+  const startBtn = document.getElementById('startWaveBtn');
+  if (startBtn && !startBtn.querySelector('.wave-btn-content')) {
+    startBtn.innerHTML =
+      '<div class="wave-btn-content">' +
+        '<span class="wave-btn-icon">▶</span>' +
+        '<span class="wave-btn-text">Nächste Runde</span>' +
+        '<span class="wave-hotkey">R</span>' +
+      '</div>';
+  }
+</script>
+</body>
+</html>

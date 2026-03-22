@@ -1,0 +1,646 @@
+{
+  "towers": [
+    {
+      "name": "Basis",
+      "file": "towers/Basis.png",
+      "shape": "circle",
+      "color": "#888888"
+    },
+    {
+      "name": "Sniper",
+      "file": "towers/Sniper.png",
+      "shape": "triangle",
+      "color": "#8b4513"
+    },
+    {
+      "name": "MG",
+      "file": "towers/MG.png",
+      "shape": "square",
+      "color": "#4a4a4a"
+    },
+    {
+      "name": "Laser",
+      "file": "towers/Laser.png",
+      "shape": "diamond",
+      "color": "#00ffff"
+    },
+    {
+      "name": "Rakete",
+      "file": "towers/Rakete.png",
+      "shape": "pentagon",
+      "color": "#8b0000"
+    },
+    {
+      "name": "Feuer",
+      "file": "towers/Feuer.png",
+      "shape": "star",
+      "color": "#ff4500"
+    },
+    {
+      "name": "Eis",
+      "file": "towers/Eis.png",
+      "shape": "hexagon",
+      "color": "#87ceeb"
+    },
+    {
+      "name": "Gift",
+      "file": "towers/Gift.png",
+      "shape": "octagon",
+      "color": "#9370db"
+    },
+    {
+      "name": "Blitz",
+      "file": "towers/Blitz.png",
+      "shape": "star",
+      "color": "#ffff00"
+    },
+    {
+      "name": "Erde",
+      "file": "towers/Erde.png",
+      "shape": "square",
+      "color": "#8b7355"
+    },
+    {
+      "name": "Mörser",
+      "file": "towers/Mörser.png",
+      "shape": "circle",
+      "color": "#654321"
+    },
+    {
+      "name": "Kanone",
+      "file": "towers/Kanone.png",
+      "shape": "square",
+      "color": "#2f4f4f"
+    },
+    {
+      "name": "Artillerie",
+      "file": "towers/Artillerie.png",
+      "shape": "pentagon",
+      "color": "#556b2f"
+    },
+    {
+      "name": "Balista",
+      "file": "towers/Balista.png",
+      "shape": "triangle",
+      "color": "#8b6914"
+    },
+    {
+      "name": "Trebuchet",
+      "file": "towers/Trebuchet.png",
+      "shape": "hexagon",
+      "color": "#a0522d"
+    },
+    {
+      "name": "Tesla",
+      "file": "towers/Tesla.png",
+      "shape": "diamond",
+      "color": "#4169e1"
+    },
+    {
+      "name": "Plasma",
+      "file": "towers/Plasma.png",
+      "shape": "star",
+      "color": "#ff00ff"
+    },
+    {
+      "name": "Ion",
+      "file": "towers/Ion.png",
+      "shape": "octagon",
+      "color": "#7b68ee"
+    },
+    {
+      "name": "Photon",
+      "file": "towers/Photon.png",
+      "shape": "star",
+      "color": "#ffd700"
+    },
+    {
+      "name": "Quanten",
+      "file": "towers/Quanten.png",
+      "shape": "circle",
+      "color": "#00ced1"
+    },
+    {
+      "name": "Tornado",
+      "file": "towers/Tornado.png",
+      "shape": "hexagon",
+      "color": "#20b2aa"
+    },
+    {
+      "name": "Klebstoff",
+      "file": "towers/Klebstoff.png",
+      "shape": "circle",
+      "color": "#daa520"
+    },
+    {
+      "name": "Schock",
+      "file": "towers/Schock.png",
+      "shape": "star",
+      "color": "#ff1493"
+    },
+    {
+      "name": "Vampir",
+      "file": "towers/Vampir.png",
+      "shape": "pentagon",
+      "color": "#8b0000"
+    },
+    {
+      "name": "Multishot",
+      "file": "towers/Multishot.png",
+      "shape": "triangle",
+      "color": "#ff8c00"
+    },
+    {
+      "name": "Nuklear",
+      "file": "towers/Nuklear.png",
+      "shape": "hexagon",
+      "color": "#32cd32"
+    },
+    {
+      "name": "Schwarzloch",
+      "file": "towers/Schwarzloch.png",
+      "shape": "circle",
+      "color": "#191970"
+    },
+    {
+      "name": "Supernova",
+      "file": "towers/Supernova.png",
+      "shape": "star",
+      "color": "#ff6347"
+    },
+    {
+      "name": "Meteor",
+      "file": "towers/Meteor.png",
+      "shape": "pentagon",
+      "color": "#cd5c5c"
+    },
+    {
+      "name": "Komet",
+      "file": "towers/Komet.png",
+      "shape": "triangle",
+      "color": "#4682b4"
+    },
+    {
+      "name": "Heilung",
+      "file": "towers/Heilung.png",
+      "shape": "diamond",
+      "color": "#98fb98"
+    },
+    {
+      "name": "Verstärker",
+      "file": "towers/Verstärker.png",
+      "shape": "hexagon",
+      "color": "#ffa07a"
+    },
+    {
+      "name": "Verlangsamung",
+      "file": "towers/Verlangsamung.png",
+      "shape": "hexagon",
+      "color": "#b0c4de"
+    },
+    {
+      "name": "Scan",
+      "file": "towers/Scan.png",
+      "shape": "circle",
+      "color": "#dda0dd"
+    },
+    {
+      "name": "Schild",
+      "file": "towers/Schild.png",
+      "shape": "pentagon",
+      "color": "#4169e1"
+    },
+    {
+      "name": "Drache",
+      "file": "towers/Drache.png",
+      "shape": "star",
+      "color": "#dc143c"
+    },
+    {
+      "name": "Kristall",
+      "file": "towers/Kristall.png",
+      "shape": "diamond",
+      "color": "#ba55d3"
+    },
+    {
+      "name": "Schatten",
+      "file": "towers/Schatten.png",
+      "shape": "octagon",
+      "color": "#2f4f4f"
+    },
+    {
+      "name": "Licht",
+      "file": "towers/Licht.png",
+      "shape": "star",
+      "color": "#fffacd"
+    },
+    {
+      "name": "Omega",
+      "file": "towers/Omega.png",
+      "shape": "hexagon",
+      "color": "#ff00ff"
+    },
+    {
+      "name": "Titan",
+      "file": "towers/Titan.png",
+      "shape": "circle",
+      "color": "#b8860b"
+    },
+    {
+      "name": "Golem",
+      "file": "towers/Golem.png",
+      "shape": "square",
+      "color": "#696969"
+    },
+    {
+      "name": "Phoenix",
+      "file": "towers/Phoenix.png",
+      "shape": "star",
+      "color": "#ff4500"
+    },
+    {
+      "name": "Kraken",
+      "file": "towers/Kraken.png",
+      "shape": "octagon",
+      "color": "#006994"
+    },
+    {
+      "name": "Hydra",
+      "file": "towers/Hydra.png",
+      "shape": "pentagon",
+      "color": "#228b22"
+    },
+    {
+      "name": "Greif",
+      "file": "towers/Greif.png",
+      "shape": "triangle",
+      "color": "#daa520"
+    },
+    {
+      "name": "Basilisk",
+      "file": "towers/Basilisk.png",
+      "shape": "diamond",
+      "color": "#9acd32"
+    },
+    {
+      "name": "Chimara",
+      "file": "towers/Chimara.png",
+      "shape": "hexagon",
+      "color": "#8b008b"
+    },
+    {
+      "name": "Wächter",
+      "file": "towers/Waechter.png",
+      "shape": "pentagon",
+      "color": "#4682b4"
+    },
+    {
+      "name": "Sentinel",
+      "file": "towers/Sentinel.png",
+      "shape": "octagon",
+      "color": "#708090"
+    },
+    {
+      "name": "Zermalmer",
+      "file": "towers/Zermalmer.png",
+      "shape": "square",
+      "color": "#a52a2a"
+    },
+    {
+      "name": "Sturmbrecher",
+      "file": "towers/Sturmbrecher.png",
+      "shape": "star",
+      "color": "#1e90ff"
+    },
+    {
+      "name": "Lichtbringer",
+      "file": "towers/Lichtbringer.png",
+      "shape": "star",
+      "color": "#fffacd"
+    },
+    {
+      "name": "Schattenjäger",
+      "file": "towers/Schattenjaeger.png",
+      "shape": "triangle",
+      "color": "#36454f"
+    },
+    {
+      "name": "Zeitverzehrer",
+      "file": "towers/Zeitverzehrer.png",
+      "shape": "circle",
+      "color": "#800080"
+    },
+    {
+      "name": "Dimensionsriss",
+      "file": "towers/Dimensionsriss.png",
+      "shape": "diamond",
+      "color": "#4b0082"
+    },
+    {
+      "name": "Graviton",
+      "file": "towers/Graviton.png",
+      "shape": "hexagon",
+      "color": "#663399"
+    },
+    {
+      "name": "Antimaterie",
+      "file": "towers/Antimaterie.png",
+      "shape": "octagon",
+      "color": "#00ffff"
+    },
+    {
+      "name": "Singularität",
+      "file": "towers/Singularitaet.png",
+      "shape": "circle",
+      "color": "#000000"
+    },
+    {
+      "name": "Apokalypse",
+      "file": "towers/Apokalypse.png",
+      "shape": "star",
+      "color": "#8b0000"
+    }
+  ],
+  "enemies": [
+    {
+      "shape": "triangle",
+      "hue": 0,
+      "file": "enemies/triangle_h0.png"
+    },
+    {
+      "shape": "triangle",
+      "hue": 30,
+      "file": "enemies/triangle_h30.png"
+    },
+    {
+      "shape": "triangle",
+      "hue": 90,
+      "file": "enemies/triangle_h90.png"
+    },
+    {
+      "shape": "triangle",
+      "hue": 150,
+      "file": "enemies/triangle_h150.png"
+    },
+    {
+      "shape": "triangle",
+      "hue": 210,
+      "file": "enemies/triangle_h210.png"
+    },
+    {
+      "shape": "triangle",
+      "hue": 260,
+      "file": "enemies/triangle_h260.png"
+    },
+    {
+      "shape": "triangle",
+      "hue": 300,
+      "file": "enemies/triangle_h300.png"
+    },
+    {
+      "shape": "square",
+      "hue": 0,
+      "file": "enemies/square_h0.png"
+    },
+    {
+      "shape": "square",
+      "hue": 30,
+      "file": "enemies/square_h30.png"
+    },
+    {
+      "shape": "square",
+      "hue": 90,
+      "file": "enemies/square_h90.png"
+    },
+    {
+      "shape": "square",
+      "hue": 150,
+      "file": "enemies/square_h150.png"
+    },
+    {
+      "shape": "square",
+      "hue": 210,
+      "file": "enemies/square_h210.png"
+    },
+    {
+      "shape": "square",
+      "hue": 260,
+      "file": "enemies/square_h260.png"
+    },
+    {
+      "shape": "square",
+      "hue": 300,
+      "file": "enemies/square_h300.png"
+    },
+    {
+      "shape": "pentagon",
+      "hue": 0,
+      "file": "enemies/pentagon_h0.png"
+    },
+    {
+      "shape": "pentagon",
+      "hue": 30,
+      "file": "enemies/pentagon_h30.png"
+    },
+    {
+      "shape": "pentagon",
+      "hue": 90,
+      "file": "enemies/pentagon_h90.png"
+    },
+    {
+      "shape": "pentagon",
+      "hue": 150,
+      "file": "enemies/pentagon_h150.png"
+    },
+    {
+      "shape": "pentagon",
+      "hue": 210,
+      "file": "enemies/pentagon_h210.png"
+    },
+    {
+      "shape": "pentagon",
+      "hue": 260,
+      "file": "enemies/pentagon_h260.png"
+    },
+    {
+      "shape": "pentagon",
+      "hue": 300,
+      "file": "enemies/pentagon_h300.png"
+    },
+    {
+      "shape": "hexagon",
+      "hue": 0,
+      "file": "enemies/hexagon_h0.png"
+    },
+    {
+      "shape": "hexagon",
+      "hue": 30,
+      "file": "enemies/hexagon_h30.png"
+    },
+    {
+      "shape": "hexagon",
+      "hue": 90,
+      "file": "enemies/hexagon_h90.png"
+    },
+    {
+      "shape": "hexagon",
+      "hue": 150,
+      "file": "enemies/hexagon_h150.png"
+    },
+    {
+      "shape": "hexagon",
+      "hue": 210,
+      "file": "enemies/hexagon_h210.png"
+    },
+    {
+      "shape": "hexagon",
+      "hue": 260,
+      "file": "enemies/hexagon_h260.png"
+    },
+    {
+      "shape": "hexagon",
+      "hue": 300,
+      "file": "enemies/hexagon_h300.png"
+    },
+    {
+      "shape": "star",
+      "hue": 0,
+      "file": "enemies/star_h0.png"
+    },
+    {
+      "shape": "star",
+      "hue": 30,
+      "file": "enemies/star_h30.png"
+    },
+    {
+      "shape": "star",
+      "hue": 90,
+      "file": "enemies/star_h90.png"
+    },
+    {
+      "shape": "star",
+      "hue": 150,
+      "file": "enemies/star_h150.png"
+    },
+    {
+      "shape": "star",
+      "hue": 210,
+      "file": "enemies/star_h210.png"
+    },
+    {
+      "shape": "star",
+      "hue": 260,
+      "file": "enemies/star_h260.png"
+    },
+    {
+      "shape": "star",
+      "hue": 300,
+      "file": "enemies/star_h300.png"
+    },
+    {
+      "shape": "diamond",
+      "hue": 0,
+      "file": "enemies/diamond_h0.png"
+    },
+    {
+      "shape": "diamond",
+      "hue": 30,
+      "file": "enemies/diamond_h30.png"
+    },
+    {
+      "shape": "diamond",
+      "hue": 90,
+      "file": "enemies/diamond_h90.png"
+    },
+    {
+      "shape": "diamond",
+      "hue": 150,
+      "file": "enemies/diamond_h150.png"
+    },
+    {
+      "shape": "diamond",
+      "hue": 210,
+      "file": "enemies/diamond_h210.png"
+    },
+    {
+      "shape": "diamond",
+      "hue": 260,
+      "file": "enemies/diamond_h260.png"
+    },
+    {
+      "shape": "diamond",
+      "hue": 300,
+      "file": "enemies/diamond_h300.png"
+    },
+    {
+      "shape": "circle",
+      "hue": 0,
+      "file": "enemies/circle_h0.png"
+    },
+    {
+      "shape": "circle",
+      "hue": 30,
+      "file": "enemies/circle_h30.png"
+    },
+    {
+      "shape": "circle",
+      "hue": 90,
+      "file": "enemies/circle_h90.png"
+    },
+    {
+      "shape": "circle",
+      "hue": 150,
+      "file": "enemies/circle_h150.png"
+    },
+    {
+      "shape": "circle",
+      "hue": 210,
+      "file": "enemies/circle_h210.png"
+    },
+    {
+      "shape": "circle",
+      "hue": 260,
+      "file": "enemies/circle_h260.png"
+    },
+    {
+      "shape": "circle",
+      "hue": 300,
+      "file": "enemies/circle_h300.png"
+    },
+    {
+      "shape": "octagon",
+      "hue": 0,
+      "file": "enemies/octagon_h0.png"
+    },
+    {
+      "shape": "octagon",
+      "hue": 30,
+      "file": "enemies/octagon_h30.png"
+    },
+    {
+      "shape": "octagon",
+      "hue": 90,
+      "file": "enemies/octagon_h90.png"
+    },
+    {
+      "shape": "octagon",
+      "hue": 150,
+      "file": "enemies/octagon_h150.png"
+    },
+    {
+      "shape": "octagon",
+      "hue": 210,
+      "file": "enemies/octagon_h210.png"
+    },
+    {
+      "shape": "octagon",
+      "hue": 260,
+      "file": "enemies/octagon_h260.png"
+    },
+    {
+      "shape": "octagon",
+      "hue": 300,
+      "file": "enemies/octagon_h300.png"
+    }
+  ]
+}
